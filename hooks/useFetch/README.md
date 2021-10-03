@@ -3,7 +3,7 @@
 Ejemplo de uso:
 
 ```
-    const { data } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
+    const { data, loading: true, error: null } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
     const { quote } = !!data && data[0];
     //Para meterlo dentro de un useLayoutEffect
     useLayoutEffect( () => {
